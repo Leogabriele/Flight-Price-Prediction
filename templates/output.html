@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction fare</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            padding:0;
+            font-family:master-font;
+            font-weight:bolder;
+        }
+        body{
+            background-image:url("../static/background-1.png");
+            background-attachment:fixed;
+            background-size:cover;
+        }
+        @font-face{
+            font-family:master-font;
+            src:url("../static/font.ttf");
+        }
+        .banner{
+            width:75%;
+            background-color:red;
+            text-align:center;
+            margin:15% auto;
+            padding:5%;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter:blur(2px);
+            border-top-left-radius:30px;
+            border-bottom-right-radius:30px;
+            font-size:28px;
+        }
+        .banner a{
+            text-decoration:underline;
+            color:black;
+        }
+        .banner a:hover{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>{{prediction_text}}</h1>
+        <a href="/">Go back to homepage</a>
+    </div>
+</body>
+</html>
